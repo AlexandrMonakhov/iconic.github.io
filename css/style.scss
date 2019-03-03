@@ -1,0 +1,90 @@
+/* Color scheme */
+$orange: #fd8569;
+$blue: #4eb2f7;
+$purple: #c049f8;
+$dark-blue: #817eff;
+$pink: #f74770;
+
+html {
+    font-size: 16px;
+}
+button, button:focus {
+    outline: none;
+}
+/* Main styles */
+.header {
+    text-align: center;
+    h1 {
+        margin-top: 5.625rem;
+        margin-bottom: 0;
+        font-size: 3.125rem;
+        span {
+            color: $orange;
+        }
+    }
+    p {
+        color: grey;
+        margin: 0;
+    }
+}
+.production {
+    margin: 7.25rem 1rem;
+    text-align: center;
+    &_card {
+        position: relative;
+        color:#fff;
+        padding: 3.5rem 1rem;
+        margin-bottom: 2rem;
+        &:hover {
+            box-shadow: 0px 0px 20px rgba(0,0,0,.15);
+        }
+        &_blue {
+            background: $blue;
+        }
+        &_purple {
+            background: $purple;
+        }
+        &_dark-blue {
+            background: $dark-blue;
+        }
+        &_pink {
+            background: $pink;
+        }
+    }
+    &_title {
+        opacity: 0.9;
+    }
+    &_description {
+        opacity: 0.75;
+    }
+    &_button_wrapper {
+        position: absolute;
+        bottom: -2rem;
+        left: 0;
+        right: 0;
+        padding: 0rem 0.8rem;
+    button {
+        bottom: -1.75rem;
+        width: 100%;
+        padding: .5rem 0;
+        background: #fff;
+        border-radius: 4.375rem;
+        border: none;
+        font-size: 1.2rem;
+        &::before {
+            content:'+';
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+        &:hover {
+            box-shadow: 0px 0px 20px rgba(0,0,0,.15);
+        }
+    }
+}
+}
+.fas {
+    opacity: .8;
+}
+.fa-camera-retro {
+    transform: rotate(-20deg);
+}
